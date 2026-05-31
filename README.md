@@ -345,3 +345,17 @@ The following are **valid engineering standards** that consume review time witho
 - **Console.Log / Debug.Log removal** — ESLint `no-console` rule; automated
 - **`TODO` comment tracking** — enforce with an issue tracker, not a review nit
 
+---
+
+## Using the Interactive Review Prompt
+
+This repo includes a [GitHub Copilot prompt](.github/prompts/code-review.prompt.md) that interactively guides you through the review process.
+
+### How to use it
+
+1. Open a Copilot Chat session in VS Code or GitHub.com
+2. Type `@workspace /code-review` (if using the prompt file as a reusable prompt) or reference the file directly
+3. Share the code you want reviewed — a diff, snippet, or description of changes
+4. Copilot will categorize the changes, apply the appropriate scrutiny level, and walk you through the critical items first
+
+The prompt distills everything in this document into a conversational flow so you don't have to remember the full checklist yourself.
